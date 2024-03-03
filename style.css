@@ -1,0 +1,1114 @@
+/* universul seleter  */
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #b3afafd9;
+}
+
+*::selection{
+    background-color: #fff;
+    color:rgb(154, 188, 32);
+}
+
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 5px;
+    background-color:#111;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(160, 128, 21);
+    border-radius: 50px;
+
+}
+
+/* navbar 1 styling*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+nav .navbarname {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: none;
+    text-transform: capitalize;
+    margin-right: 250px;
+    
+   
+}
+
+nav .logo span{
+    color: rgb(160, 128, 21);
+}
+
+nav .navbarname a{
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+/* navbar hover effet styling */
+nav .navbarname a:hover,
+nav a.active{
+    border-bottom: 3px solid rgb(160, 128, 21);
+
+}
+
+
+/* menu btn styling  */
+.menu{
+    opacity: 0;
+    font-size: 25px;
+}
+
+.menu .fa-solid{
+    color: rgb(160, 128, 21);
+}
+
+.manubar2{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content:end;
+    background-color: rgb(25, 25, 25);
+    opacity: 0;
+    position: absolute;
+    
+}
+
+.manubar2 a{
+    text-decoration: none;
+    font-size: 3vw;
+    margin-right: 20px;
+
+}
+
+nav .fa-xmark{
+    opacity: 0;
+    margin-left: -10px;
+}
+
+.manubar2 a:hover{
+    border-bottom: 4px solid rgb(160, 128, 21);
+}
+
+
+
+
+/* home page background video set */
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+
+
+/* mouse cursuil styling */
+.cursul{
+    height: 15px;
+    width: 15px;
+    background-color:  rgb(160, 128, 21);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    transition: all ease 0.1s;
+}
+
+
+
+/* home page 1 styling */
+.contaner {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #111111d1;
+   
+}
+
+/* home page card 1 page style */
+.contaner .card{
+    margin-left: 150px;
+}
+
+/* home page img styling */
+.contaner .card img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    background-color: rgba(10, 34, 39, 0.451);
+    border-radius: 100px 300px;
+    
+}
+
+
+.contaner .card img:hover{
+    border-radius: 200px 100px;
+}
+
+
+
+/* home page card 2 page style */
+.contaner .card2 {
+    font-size: 3vw;
+    line-height: 6vh;
+}
+
+.contaner .hello {
+    font-size: 1.5vw;
+    
+}
+
+.contaner .name {
+    color:rgb(160, 128, 21);
+    
+}
+
+
+.contaner .titletag{
+    margin-top: 17px;
+    font-size: 1.5vh;
+    width: 64%;
+    line-height: 17px;
+    margin-left: 5px;
+}
+
+
+.contaner a {
+    background-color: rgb(160, 128, 21);
+    color: #111;
+    padding: 10px 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+
+
+/* about me page 2 styling */
+
+#About{
+    opacity: 1;
+    background-color:  #111111d1;
+}
+
+
+.page2 {
+    min-height: 100vh;
+    background-color:#111;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 100px;
+    opacity: 0;
+    
+}
+
+.page2 .card img {
+    height: 400px;
+    background-color: rgba(10, 34, 39, 0.451);
+    border-radius: 50px 50px;
+}
+
+
+.page2 .card2 .about-me{
+    margin-bottom: 10px;
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: rgb(160, 128, 21);
+    mix-blend-mode: difference;
+}
+
+.page2 .card2 p{
+    text-align: justify;
+    line-height: 25px;
+    font-size: 1vw;
+    font-weight: 400;
+    mix-blend-mode: difference;
+    
+
+}
+
+.page2 .card2 {
+    padding: 100px;
+}
+
+/* skills section style*/
+.page2 .card3 {
+    display: flex;
+    gap: 100px;
+    padding-top: 30px;
+    mix-blend-mode: difference;
+}
+
+.page2 .card3 h1{
+    font-size: 1.5vw;
+    mix-blend-mode: difference;
+}
+
+.page2 .card4 {
+    display: flex;
+    margin-top: 20px;
+    position: absolute;
+    line-height: 30px;
+    border: 1px solid rgb(160, 128, 21);
+    padding: 10px 20px 30px 10px;
+    border-radius: 5px;
+}
+
+.page2 .skill1 {
+    mix-blend-mode: difference;
+    
+}
+
+.page2 .skill2 {
+    margin-left: 90px;
+    mix-blend-mode: difference;
+    
+}
+
+.page2 .skill3{
+    margin-left: 130px;
+    mix-blend-mode: difference;
+
+}
+
+
+.page2 .skill2 img{
+    height: 15px;
+    mix-blend-mode: difference;
+}
+
+
+/* Experience section */
+.page2 .card5{
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    padding: 3px 100px 30px 10px;
+}
+
+.page2 .card5 .exp1{
+    border: 1px solid rgb(160, 128, 21);
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.page2 .card5 .exp2{
+    border: 1px solid rgb(160, 128, 21);
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+
+.page2 .card5 h1{
+    font-size: 1.5vw;
+    font-weight: 900;
+    color: rgb(160, 128, 21);
+}
+
+.page2 .card5 h2{
+    font-size: 1vw;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* education section */
+.page2 .card6{
+    display: flex;
+    margin-top: 20px;
+    opacity: 0;
+
+}
+
+.page2 .card6 .edu1{
+    border: 1px solid rgb(160, 128, 21);
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.page2 .card6 .edu2{
+    border: 1px solid rgb(160, 128, 21);
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+.page2 .card6 h1{
+    font-size: 1.5vw;
+    font-weight: 900;
+    color: rgb(160, 128, 21);
+}
+
+.page2 .card6 h2{
+    font-size: 1vw;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+
+.page2 i,img{
+    color:rgb(160, 128, 21);
+    font-size: 20px;
+
+}
+
+
+/* project page 3 styling*/
+
+.page3{
+    min-height: 100vh;
+    background-color:#111;
+}
+.page3 h1{
+    padding-top: 100px;
+    padding-left: 100px;
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: rgb(160, 128, 21);
+    opacity: 0;
+    mix-blend-mode: difference;
+}
+
+.page3 .card1{
+    height: 450px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+
+/* project card background img set and style */
+.page3 #card1{
+    background-image: url("/img/amg2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0;
+}
+
+.page3 #card2{
+    background-image: url("/img/animation.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0;
+}
+.page3 #card3{
+    background-image: url("/img/two\ good2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0;
+}
+
+.page3 #card1:hover{
+    scale: 1.03;
+
+}
+
+.page3 #card2:hover{
+    scale: 1.03;
+
+}
+.page3 #card3:hover{
+    scale: 1.03;
+
+}
+
+
+.page3 .contenar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.page3 .hovercard{
+    background-image: linear-gradient(rgba(25, 23, 23, 0.852),rgba(47, 46, 46, 0.836));
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.page3 .card1 .psummary1{
+    border-radius: 10px;
+    text-align: center;
+    padding:140px 10px;
+    color:aliceblue;
+    font-weight: 400;
+}
+.page3 .card1 p{
+    border-radius: 10px;
+    text-align: center;
+    padding:125px 10px;
+    color:  aliceblue;
+    font-weight: 400;
+}
+
+
+.page3 .hovercard .pbtns{
+    margin-left: 45px;
+}
+
+
+.page3 .hovercard .pbtn{
+    background-color:#c9c2c2;
+    color: #111;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+    
+}
+
+.page3 .hovercard:hover{
+    opacity: 1;
+    scale: 1.03;
+}
+
+.page3 .hovercard .pbtn:hover{
+    background-color:  rgb(222, 175, 22);
+
+}
+
+
+/* more project creating animation effect part */
+.page3 .more{
+    margin-top: 50px;
+    margin-left: 85%;
+    position: absolute;
+    animation-name: moreproject;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+.page3 .more-p{
+    height: 100px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 1.2vw;
+    background-color: rgb(160, 128, 21);
+    border-radius: 50%;
+    padding: 10px;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.page3 .more-p:hover{
+    background-color: rgb(208, 164, 21);
+    color: #fff;
+
+}
+
+@keyframes moreproject {
+    0%{
+        left: 0;
+    }
+    
+    100%{
+        left: 100px;
+    }
+}
+
+
+
+/* contact page 4 styling  */
+
+
+.page4{
+    min-height: 85vh;
+    background-color:#111;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 200px;
+
+}
+
+
+.page4 .cot1{
+    margin: 10px;
+    height: 500px;
+    width: 40%;
+}
+
+.page4 .cot1 h1{
+    text-transform: capitalize;
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: rgb(160, 128, 21);
+    mix-blend-mode: difference;
+}
+
+.page4 .cot1 .contact{
+    height: 100px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+
+.page4 .cot1 .contact i{
+   margin: 10px;
+   mix-blend-mode: difference;
+}
+
+.page4 .cot1 .contact a{
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 0.7vw;
+    mix-blend-mode: difference;
+}
+
+.page4 .cot1 .socialmedia i{
+    padding: 10px 20px;
+    margin-left: 20px;
+    font-size: 2vw;
+    mix-blend-mode: difference;
+    margin-top: 10px;
+}
+
+.page4 .cot1 .downloadbtn{
+    margin-top: 50px;
+    margin-left: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 50px;
+    color: black;
+    background-color: rgb(160, 128, 21);
+    mix-blend-mode: difference;
+}
+
+
+.page4 .cot2 {
+    margin: 10px;
+    height: 500px;
+    width: 40%;
+   
+}
+
+
+
+
+
+.page4 .cot2 .cotect-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    margin: 10px;
+    
+}
+
+.page4 .cot2 .name-email{
+    width: 90%;
+    height: 50px;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #494747;
+    
+}
+
+.page4 .cot2 #email{
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    background-color: #494747;
+}
+
+
+
+.page4 .cot2 .message{
+    width: 90%;
+    height: 200px;
+    border: none;
+    border-radius: 5px;
+    background-color: #494747;
+
+    
+}
+
+.page4 .cot2 .btn{
+    border: none;
+    padding: 20px 100px;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: rgb(160, 128, 21);
+    color: #111;
+    font-size: 15px;
+    font-weight: 800;
+    mix-blend-mode: difference;
+}
+
+
+.page4 .socialmedia i:hover{
+    color:rgb(160, 128, 21);
+}
+
+
+
+
+/* fotter style */
+footer{
+    height: 40px;
+    width: 100%;
+    background-color: #111;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+
+
+
+/* responsive website for mobile users */
+
+@media (max-width:600px) {
+
+    /* navbar setup */
+    .nav a{
+        display: none;
+    }
+
+
+    nav .navbarname {
+        margin-right: 160px;
+    }
+
+    .menu{
+        opacity: 1;
+    }
+    
+    .manubar2 a{
+        font-size: 11vw;
+        line-height: 15vw;
+    
+    }
+
+    
+    /* home page set up */
+    .contaner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .contaner .card{
+        margin-left: -10px;
+        margin-top: 100px;
+
+    } 
+
+    .contaner .card img {
+        height: 250px;
+        border-radius: 100px 100px;
+    }
+
+    .contaner .card2 {
+        margin-top: 20px;
+        font-size: 5vw;
+        margin-left: 2%;
+        line-height: 5vh;
+        text-align: center;
+    }
+
+    .contaner .card2 .hello{
+        font-size: 2.5vw;
+        
+    }
+
+    .contaner .card2 span{
+        font-size: 2.5vw;
+    }
+
+    .contaner .card2 .name{
+        font-size: 4vw;
+        font-weight: 700;
+
+    }
+
+    .contaner .card2 .job{
+        font-size: 5.5vw;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+
+    .contaner .card2 .titletag{
+        margin-top: -10px;
+        font-size: 1.5vh;
+        width: 50%;
+        line-height: 14px;
+        margin-left: 145px;
+        margin-bottom: 20px;
+        
+    }
+
+    .contaner .card2 a{
+        font-size: 3vw;
+    }
+
+
+
+
+    /* about me page 2 setup*/
+
+    .page2{
+        display: flex;
+        flex-direction: column;
+    }
+    .page2 .card img {
+        height: 100px;
+        background-color: rgba(10, 34, 39, 0.451);
+        border-radius: 50px 50px;
+        margin-top: 100px;
+    }
+
+    .page2 .card2{
+        text-align: center;
+        margin-top: -100px;
+    }
+    
+    
+    .page2 .card2 .about-me{
+        font-size: 4vw;
+        margin-top: 10px;
+    }
+
+    .page2 .card2 p{
+        font-size: 2.5vw;
+        line-height: 3.5vw;
+        padding: 0 10px;
+        text-align: center;
+
+    }
+
+    .page2 .card3{
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+
+    .page2 .card3 h1{
+        font-size: 3vw;
+
+    }
+
+    .page2 .card4{
+        width: 62%;
+        margin-left: 10px;
+
+    }
+
+    .page2 .skill1{
+        text-align:start;
+
+    }
+    
+    .page2 .skill2 {
+        margin-left: 55px;
+        text-align:start;
+        
+    }
+    
+    .page2 .skill3{
+        margin-left: 80px;
+        text-align:start;
+    
+    }
+
+    .page2 .card4 h3{
+        font-size: 2vw;
+    }
+
+    .page2 .card4 i{
+        font-size: 2.5vw;
+        
+    }
+
+    /* exprience section */
+    .page2 .card5{
+        width: 65vw;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    
+    .page2 .card5 h1{
+        font-size: 4vw;
+    }
+
+    .page2 .card5 h2{
+        font-size: 3vw;
+    }
+
+    .page2 .card5 .exp2{
+        margin-left: -1.5px;
+    }
+
+    /* edgacation section */
+
+    .page2 .card6{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    
+    .page2 .card6 h1{
+        font-size: 4vw;
+    }
+
+    .page2 .card6 h2{
+        font-size: 3vw;
+    }
+
+    .page2 .card6 .edu2{
+        margin-left: -1.5px;
+    }
+
+    /* project section */
+    .page3 h1{
+        font-size: 5vw;
+        padding-bottom: 50px;
+    }
+    
+    .page3 .contenar{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .page3 .card1{
+        height: 320px;
+        width: 300px;
+        margin-bottom: 35px;
+    }
+
+
+    .page3 .hovercard{
+        height: 320px;
+        width: 300px;
+        border-radius: 10px;
+    }
+    
+    .page3 #card1{
+      background-size: 100% 100%;
+    }
+    
+    .page3 #card2{
+      background-size: 100% 100%;
+
+    }
+    .page3 #card3{
+      background-size: 100% 100%;
+    }
+
+    .page3 .card1 .psummary1{
+        border-radius: 10px;
+        text-align: center;
+        padding:90px 10px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .page3 .card1 p{
+        padding:80px 10px;
+        font-size: 12px;
+    }
+    
+    
+    .page3 .hovercard .pbtn{
+        padding: 10px 25px;
+        
+    }
+    
+    .page3 .hovercard:hover{
+        opacity: 1;
+        scale: 1.03;
+    }
+
+    /* animation move */
+    .page3 .more{
+        margin-top: 50px;
+        margin-left: 60%;
+    }
+    
+    .page3 .more-p{
+        height: 50px;
+        width: 50px;
+    }
+
+
+    /* contact page  4 setup*/
+    .page4{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .page4 .cot1 .contact{
+        margin-left: -100px;
+    }
+
+   
+
+
+    .page4 .cot1 h1{
+        width: 200px;
+        font-size: 5vw;
+        padding-top: 200px;
+    } 
+
+
+    .page4 .contact{
+        display: flex;
+        align-items: center;
+        margin-left: 35px;
+    }
+
+
+
+    .page4 .cot1 .contact i{
+        font-size: 2.5vw;
+    }
+
+    .page4 .cot1 .contact a{
+        font-size: 3vw;
+    }
+
+    .page4 .cot1 .socialmedia{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+    .page4 .cot1 .socialmedia i{
+        font-size: 5vw;
+        
+    }
+
+
+    .page4 .cot1 .downloadbtn{
+        margin-left: -20px; 
+        font-size: 2vw;
+        padding: 15px 50px;
+    }
+
+
+    .page4 .cot2 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 100px;
+    }
+
+    
+    
+    .page4 .cot2 .name-email{
+        width: 55vw;
+        margin-left: -100px;
+        
+    }
+    
+    .page4 .cot2 #email{
+        width: 55vw;
+        margin-left: -100px;
+    }
+    
+    
+    
+    .page4 .cot2 .message{
+        width: 55vw;
+        margin-left: -100px;
+    
+        
+    }
+    
+    .page4 .cot2 .btn{
+        padding: 15px 70px;
+        margin-left: -100px;
+    }
+
+    .page4 .cot2 .cotect-form{
+        padding-bottom: 100px;
+    }
+
+
+    footer{
+        height: 40px;
+        width: 100%;
+        background-color: #111;
+        text-align: center;
+    }
+
+    footer a{
+        text-decoration: none;
+    }
+
+    nav .logo{
+        margin-left: -50px;
+    }
+
+
+}
+
+
+
+
+
+
+
