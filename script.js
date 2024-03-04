@@ -215,8 +215,8 @@ tl.to(".page2,.page2 img,.page2 .card2",{
     scrollTrigger: {
         trigger: ".page2",
         scroller: "body",
-        start: "top 5%",
-        end: "top 15%",
+        start: "top 25%",
+        end: "top 35%",
         scrub:true,
         // markers:true
       },
@@ -243,9 +243,9 @@ tl.to(".page3 .card1, .page3 h1, .page3 .more",{
 
 // navbar animation 
 gsap.to(".nav", {
+    height: "80px",
     backgroundColor: "#111",
     duration: 0.5,
-    height: "35px",
     scrollTrigger: {
       trigger: ".nav",
       scroller: "body",
