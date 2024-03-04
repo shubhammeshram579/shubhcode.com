@@ -412,7 +412,7 @@ video{
 
 /* project card background img set and style */
 .page3 #card1{
-    background-image: url("./img/amg2.png");
+    background-image: url(./img/amg2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
