@@ -283,7 +283,7 @@ video{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 30px;
     position: absolute;
     line-height: 2.5vw;
     border: 1px solid rgb(160, 128, 21);
@@ -309,6 +309,7 @@ video{
     position: absolute;
     opacity: 0;
     padding: 3px 100px 30px 10px;
+    margin-top: 20px;
     
 }
 
@@ -355,6 +356,7 @@ video{
     display: flex;
     margin-top: 20px;
     opacity: 0;
+    margin-top: 20px;
 
 }
 
@@ -730,7 +732,8 @@ footer a{
 
 
     nav .navbarname {
-        margin-right: 160px;
+        margin-right: 150px;
+       
     }
 
     .menu{
@@ -739,8 +742,7 @@ footer a{
     
     .manubar2 a{
         font-size: 11vw;
-        line-height: 15vw;
-    
+        line-height: 15vw; 
     }
 
     
@@ -796,7 +798,7 @@ footer a{
 
     .contaner .card2 .titletag{
         font-size: 1.5vh;
-        line-height: 16px;
+        line-height: 14px;
         margin-bottom: 20px;
         text-align: center;
         margin-top: -1px;
@@ -869,6 +871,7 @@ footer a{
         line-height: 4vh;
         text-align: start;
         margin-left: 2vw;
+        
     }
 
 
@@ -890,6 +893,7 @@ footer a{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 20px;
         
         
     }
@@ -898,7 +902,8 @@ footer a{
         height: 10vh;
         text-align: center;
         margin-top: 20px;
-        margin-left: 70px;
+        margin-left: 60px;
+        padding-top: 10px;
         
     }
     
@@ -907,6 +912,7 @@ footer a{
         text-align:center;
         line-height: 3vh;
         margin-left: 70px;
+        padding-top: 10px;
     
     }
     
