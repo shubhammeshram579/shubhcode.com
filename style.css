@@ -412,7 +412,7 @@ video{
 
 /* project card background img set and style */
 .page3 #card1{
-    background-image: url(/img/amg2.png);
+    background-image: url("./img/amg2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -420,14 +420,14 @@ video{
 }
 
 .page3 #card2{
-    background-image: url(/img/animation.png);
+    background-image: url("./img/animation.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   opacity: 0;
 }
 .page3 #card3{
-    background-image: url(/img/twogood2.png);
+    background-image: url("./img/twogood2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
