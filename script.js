@@ -215,8 +215,8 @@ tl.to(".page2,.page2 img,.page2 .card2",{
     scrollTrigger: {
         trigger: ".page2",
         scroller: "body",
-        start: "top 10%",
-        end: "top 35%",
+        start: "top 5%",
+        end: "top 15%",
         scrub:true,
         // markers:true
       },
