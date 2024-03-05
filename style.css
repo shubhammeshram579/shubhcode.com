@@ -750,7 +750,7 @@ footer a{
         display: flex;
         align-items: center;
         gap:3vw;
-        margin-left: -100px;
+        margin-left: -10px;
     }
     
     nav .navbarname a{
@@ -858,7 +858,7 @@ footer a{
 
     #home .card2 .titletag{
         font-size: 1.5vh;
-        line-height: 14px;
+        line-height: 17px;
         margin-bottom: 20px;
         text-align: center;
         margin-top: -1px;
