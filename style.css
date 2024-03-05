@@ -42,13 +42,10 @@ body{
 
 nav{
     height: 70px;
-    width: 90%;
-    /* background-color: blueviolet; */
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 150px;
+    justify-content: space-around;
     position: fixed;
     z-index: 999;
 }
@@ -56,17 +53,15 @@ nav{
 nav .navbarname{
     display: flex;
     align-items: center;
-    gap:50px;
+    gap:3vw;
+    margin-left: 400px;
 
 }
 
 nav .navbarname a{
     text-decoration: none;
     font-size: 1vw;
-}
-
-nav .menu .fa-bars{
-    opacity: 0;
+    
 }
 
 /* navbar hover effet styling */
@@ -75,14 +70,26 @@ nav a.active{
     border-bottom: 3px solid rgb(160, 128, 21);
 }
 
+
 nav .logo span{
     color: rgb(160, 128, 21);
 }
 
 
-.menu .fa-solid{
-    color: rgb(160, 128, 21);
+.menu{
+    opacity: 0;
 }
+
+
+
+.menu i{
+    font-size: 1.5vw;
+    color: rgb(160, 128, 21);
+
+}
+
+
+
 
 .manubar2{
     height: 98vh;
@@ -105,10 +112,7 @@ nav .logo span{
 
 }
 
-nav .fa-xmark{
-    opacity: 0;
-    /* margin-left: -10px; */
-}
+
 
 .manubar2 a:hover{
     border-bottom: 4px solid rgb(160, 128, 21);
@@ -139,27 +143,23 @@ video{
     transition: all ease 0.1s;
 }
 
-
-
-/* home page 1 styling */
-.contaner {
+#home{
     min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #111111d1;
-    /* background-color: gray; */
-   
 }
 
-/* home page card 1 page style */
-.contaner .card{
+
+/* home page 1 styling */
+
+#home .card{
     margin-left: 150px;
 }
 
 /* home page img styling */
-.contaner .card img {
+#home  .card img {
     height: 600px;
     width: 100%;
     object-fit: cover;
@@ -169,30 +169,30 @@ video{
 }
 
 
-.contaner .card img:hover{
+#home  .card img:hover{
     border-radius: 200px 100px;
 }
 
 
 
 /* home page card 2 page style */
-.contaner .card2 {
+#home  .card2 {
     font-size: 3vw;
     line-height: 6vh;
 }
 
-.contaner .hello {
+#home  .hello {
     font-size: 1.5vw;
     
 }
 
-.contaner .name {
+#home  .name {
     color:rgb(160, 128, 21);
     
 }
 
 
-.contaner .titletag{
+#home  .titletag{
     margin-top: 17px;
     font-size: 1.5vh;
     width: 64%;
@@ -201,7 +201,7 @@ video{
 }
 
 
-.contaner a {
+#home  a {
     background-color: rgb(160, 128, 21);
     color: #111;
     padding: 10px 40px;
@@ -216,30 +216,44 @@ video{
 /* about me page 2 styling */
 
 #About{
-    opacity: 1;
-    background-color:  #111111d1;
-}
-
-
-.page2 {
     min-height: 100vh;
-    background-color:#111;
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0px 100px;
     opacity: 0;
-    
 }
 
-.page2 .card img {
+#About{
+    background-color: #111;
+}
+
+.main{
+    background-color: #111111d1;
+}
+
+
+
+#About .card2{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+#About .card2 img {
     height: 400px;
     background-color: rgba(10, 34, 39, 0.451);
     border-radius: 50px 50px;
 }
 
 
-.page2 .card2 .about-me{
+#About .card2 .box{
+    width: 60%;
+
+}
+
+
+#About .card2 .about-me{
     margin-bottom: 10px;
     font-size: 2.5vw;
     font-weight: 700;
@@ -247,9 +261,10 @@ video{
     mix-blend-mode: difference;
 }
 
-.page2 .card2 p{
+#About .card2 p{
+    width: 80%;
     text-align: justify;
-    line-height: 25px;
+    line-height: 1.5vw;
     font-size: 1vw;
     font-weight: 400;
     mix-blend-mode: difference;
@@ -257,24 +272,23 @@ video{
 
 }
 
-.page2 .card2 {
-    padding: 100px;
-}
 
 /* skills section style*/
-.page2 .card3 {
+#About .card3 {
+    width: 100%;
     display: flex;
+    align-items: center;
     gap: 100px;
-    padding-top: 30px;
+    margin-top: 30px;
     mix-blend-mode: difference;
 }
 
-.page2 .card3 h1{
+#About .card3 h1{
     font-size: 1.5vw;
     mix-blend-mode: difference;
 }
 
-.page2 .card4 {
+#About .card4 {
     height: 18vh;
     width: 27%;
     display: flex;
@@ -290,14 +304,14 @@ video{
 }
 
 
-.page2 .skill2 img{
+#About .skill2 img{
     height: 15px;
     mix-blend-mode: difference;
 }
 
 
 /* Experience section */
-.page2 .card5{
+#About .card5{
     height: 20vh;
     width: 40%;
     display: flex;
@@ -310,7 +324,7 @@ video{
     
 }
 
-.page2 .card5 .exp1{
+#About .card5 .exp1{
     height: 15vh;
     width: 100%;
     text-align: start;
@@ -322,7 +336,7 @@ video{
     
 }
 
-.page2 .card5 .exp2{
+#About .card5 .exp2{
     height: 15vh;
     width: 100%;
     text-align: start;
@@ -336,20 +350,20 @@ video{
 }
 
 
-.page2 .card5 h1{
+#About .card5 h1{
     font-size: 1.5vw;
     font-weight: 900;
     color: rgb(160, 128, 21);
 }
 
-.page2 .card5 h2{
+#About .card5 h2{
     font-size: 1vw;
     letter-spacing: 1px;
     font-weight: 400;
 }
 
 /* education section */
-.page2 .card6{
+#About .card6{
     display: flex;
     margin-top: 20px;
     opacity: 0;
@@ -357,14 +371,14 @@ video{
 
 }
 
-.page2 .card6 .edu1{
+#About .card6 .edu1{
     border: 1px solid rgb(160, 128, 21);
     padding: 20px 20px;
     border-radius: 5px;
     margin-top: 10px;
 }
 
-.page2 .card6 .edu2{
+#About .card6 .edu2{
     border: 1px solid rgb(160, 128, 21);
     padding: 20px 20px;
     border-radius: 5px;
@@ -373,20 +387,20 @@ video{
 
 }
 
-.page2 .card6 h1{
+#About .card6 h1{
     font-size: 1.5vw;
     font-weight: 900;
     color: rgb(160, 128, 21);
 }
 
-.page2 .card6 h2{
+#About .card6 h2{
     font-size: 1vw;
     letter-spacing: 1px;
     font-weight: 400;
 }
 
 
-.page2 i,img{
+#About i,img{
     color:rgb(160, 128, 21);
     font-size: 20px;
 
@@ -567,26 +581,23 @@ video{
 /* contact page 4 styling  */
 
 
-.page4{
-    min-height: 86vh;
+#Contact{
+    min-height: 100vh;
+    width: 100%;
     background-color:#111;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0 200px;
-    padding-top: 100px;
 
 }
 
 
-.page4 .cot1{
+#Contact .cot1{
     margin: 10px;
     height: 500px;
-    /* width: 100%; */
-    /* background-color: red; */
 }
 
-.page4 .cot1 h1{
+#Contact .cot1 h1{
     text-transform: capitalize;
     font-size: 2.5vw;
     font-weight: 700;
@@ -595,7 +606,7 @@ video{
     /* background-color: red; */
 }
 
-.page4 .cot1 .contact{
+#Contact .cot1 .contact{
     height: 100px;
     width: 300px;
     display: flex;
@@ -603,12 +614,12 @@ video{
     padding: 10px 30px;
 }
 
-.page4 .cot1 .contact i{
+#Contact .cot1 .contact i{
    margin: 10px;
    mix-blend-mode: difference;
 }
 
-.page4 .cot1 .contact a{
+#Contact .cot1 .contact a{
     padding: 5px 20px;
     text-decoration: none;
     text-transform: capitalize;
@@ -616,7 +627,7 @@ video{
     mix-blend-mode: difference;
 }
 
-.page4 .cot1 .socialmedia i{
+#Contact .cot1 .socialmedia i{
     padding: 10px 20px;
     margin-left: 20px;
     font-size: 2vw;
@@ -624,7 +635,7 @@ video{
     margin-top: 10px;
 }
 
-.page4 .cot1 .downloadbtn{
+#Contact .cot1 .downloadbtn{
     margin-top: 50px;
     margin-left: 40px;
     border: none;
@@ -636,7 +647,7 @@ video{
 }
 
 
-.page4 .cot2 {
+#Contact .cot2 {
     margin: 10px;
     height: 500px;
     width: 40%;
@@ -646,7 +657,7 @@ video{
 
 
 
-.page4 .cot2 .cotect-form{
+#Contact .cot2 .cotect-form{
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -655,7 +666,7 @@ video{
     
 }
 
-.page4 .cot2 .name-email{
+#Contact .cot2 .name-email{
     width: 90%;
     height: 50px;
     border: none;
@@ -665,7 +676,7 @@ video{
     
 }
 
-.page4 .cot2 #email{
+#Contact .cot2 #email{
     width: 90%;
     border: none;
     border-radius: 5px;
@@ -674,7 +685,7 @@ video{
 
 
 
-.page4 .cot2 .message{
+#Contact .cot2 .message{
     width: 90%;
     height: 200px;
     border: none;
@@ -684,7 +695,7 @@ video{
     
 }
 
-.page4 .cot2 .btn{
+#Contact .cot2 .btn{
     border: none;
     padding: 20px 100px;
     border-radius: 10px;
@@ -697,7 +708,7 @@ video{
 }
 
 
-.page4 .socialmedia i:hover{
+#Contact .socialmedia i:hover{
     color:rgb(160, 128, 21);
 }
 
@@ -726,35 +737,66 @@ footer a{
     /* navbar setup */
 
     nav{
-        height: 50px;
-        padding-left: 2px;
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         position: fixed;
         z-index: 999;
     }
     
-
-   
+    nav .navbarname{
+        display: flex;
+        align-items: center;
+        gap:3vw;
+        margin-left: -100px;
+    }
+    
     nav .navbarname a{
         display: none;
+        
+    }
+    
+    /* navbar hover effet styling */
+    nav .navbarname a:hover,
+    nav a.active{
+        border-bottom: 3px solid rgb(160, 128, 21);
     }
 
-    nav .logo h1{
+
+    nav .logo{
+        font-size: 3vw;
+    }
+    
+    
+    nav .logo span{
+        color: rgb(160, 128, 21);
+    }
+    
+    
+    
+    .menu i{
         font-size: 5vw;
+        color: rgb(160, 128, 21);
     }
 
-    nav .menu .fa-xmark{
-        opacity: 0;
-        font-size: 5vw;
-    }
-
-    nav .menu .fa-bars{
-        font-size: 5vw;
+    .nav .menu {
         opacity: 1;
+        margin-right: -200px
+    }
+
+    
+    .menu .fa-xmark{
+        opacity: 0;
     }
 
 
     /* menubar 2 */
-    
+   
+    .manubar2 {
+        height: 88vh;
+    }
     .manubar2 a{
         text-decoration: none;
         font-size: 8vh;
@@ -765,7 +807,7 @@ footer a{
 
     
     /* home page set up */
-    .contaner{
+    #home{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -773,48 +815,48 @@ footer a{
         
     }
 
-    .contaner .card{
+    #home .card{
         margin-left: -10px;
         margin-top: 6vh;
 
     } 
 
-    .contaner .card img {
+    #home .card img {
         height: 250px;
         border-radius: 100px 100px;
     }
 
-    .contaner .card2 {
+    #home .card2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .contaner .card2 .hello{
+    #home .card2 .hello{
         font-size: 2.5vw;
         
     }
 
-    .contaner .card2 span{
+    #home .card2 span{
         font-size: 2.5vw;
     }
 
-    .contaner .card2 .name{
+    #home .card2 .name{
         font-size: 4vw;
         font-weight: 700;
         margin-top: -12px;
 
     }
 
-    .contaner .card2 .job{
+    #home .card2 .job{
         font-size: 5.5vw;
         font-weight: 700;
         margin-top: -12px;
     }
 
 
-    .contaner .card2 .titletag{
+    #home .card2 .titletag{
         font-size: 1.5vh;
         line-height: 14px;
         margin-bottom: 20px;
@@ -823,7 +865,7 @@ footer a{
         
     }
 
-    .contaner .card2 a{
+    #home .card2 a{
         font-size: 3vw;
     }
 
@@ -832,100 +874,108 @@ footer a{
 
     /* about me page 2 setup*/
 
-    .page2{
+    #About .card2{
+        width: 100%;
         display: flex;
         flex-direction: column;
+        text-align: center;
+        justify-content: space-evenly;
+        padding-top: 50px;
     }
-    .page2 .card img {
-        height: 100px;
+
+    #About .card2 img{
+        height: 30vw;
         background-color: rgba(10, 34, 39, 0.451);
         border-radius: 50px 50px;
-        margin-top: 100px;
-    }
-
-    .page2 .card2{
-        text-align: center;
-        margin-top: -100px;
+        /* margin-top: 100px; */
     }
 
 
+    #About .card2 .box{
+        width: 100%;
+    }
    
     
     
-    .page2 .card2 .about-me{
+    #About .card2 .about-me{
         font-size: 4vw;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
-    .page2 .card2 p{
+    #About .card2 .box p{
+        width: 90%;
         font-size: 3vw;
         line-height: 3.5vw;
-        padding: 0 10px;
+        padding: 0 20px;
         text-align: center;
         font-weight: 400;
 
     }
 
-    .page2 .card3{
-        padding-left: 10px;
-        padding-right: 10px;
 
+    #About .card3 {
+        width: 100%;
+        gap: 18vw;
+        margin-top: 20px;
+        margin-bottom: -10px;
+        font-weight: 400;
+        mix-blend-mode: difference;
+    }
+    
+    #About .card3 h1{
+        font-size: 4vw;
+        mix-blend-mode: difference;
+        margin-left: 20px;
+        margin-right: -10px;
     }
 
 
-    .page2 .card3 h1{
-        font-size: 3vw;
 
-    }
-
-
-
-    .page2 .card4 {
+    #About .card4 {
         height: 15vh;
-        width: 75vw;
+        width: 78vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
         line-height: 4vh;
         text-align: start;
-        margin-left: 2vw;
+        margin-left: 4vw;
         
     }
 
 
-    .page2 .card4 h3{
+    #About .card4 h3{
         font-size: 3vw;
         font-weight: 400;
     }
 
-    .page2 .card4 i{
+    #About .card4 i{
         font-size: 3.5vw;
         
     }
 
     /* exprience section */
-    .page2 .card5{
+    #About .card5{
         height: 35vh;
-        width: 70%;
+        width: 75%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 10px;
         
         
     }
     
-    .page2 .card5 .exp1{
+    #About .card5 .exp1{
         height: 10vh;
         text-align: center;
         margin-top: 20px;
-        margin-left: 60px;
+        margin-left: 70px;
         padding-top: 10px;
-        
     }
     
-    .page2 .card5 .exp2{
+    #About .card5 .exp2{
         height: 10vh;
         text-align:center;
         line-height: 3vh;
@@ -935,11 +985,11 @@ footer a{
     }
     
     
-    .page2 .card5 h1{
+    #About .card5 h1{
         font-size: 4vw;
     }
     
-    .page2 .card5 h2{
+    #About .card5 h2{
         font-size: 3vw;
         letter-spacing: 1px;
         font-weight: 400;
@@ -948,22 +998,22 @@ footer a{
 
     /* edgacation section */
 
-    .page2 .card6{
+    #About .card6{
         width: 90%;
         display: flex;
         flex-direction: column;
         margin-left: 20px;
     }
     
-    .page2 .card6 h1{
+    #About .card6 h1{
         font-size: 4vw;
     }
 
-    .page2 .card6 h2{
+    #About .card6 h2{
         font-size: 3vw;
     }
 
-    .page2 .card6 .edu2{
+    #About .card6 .edu2{
         margin-left: -1.5px;
     }
 
@@ -980,15 +1030,15 @@ footer a{
     }
 
     .page3 .card1{
-        height: 320px;
-        width: 300px;
+        height: 75vw;
+        width: 73vw;
         margin-bottom: 35px;
-    }
+    } 
 
 
     .page3 .hovercard{
-        height: 320px;
-        width: 300px;
+        height: 75vw;
+        width: 73vw;
         border-radius: 10px;
     }
     
@@ -1007,21 +1057,27 @@ footer a{
     .page3 .card1 .psummary1{
         border-radius: 10px;
         text-align: center;
-        padding:90px 10px;
+        padding:22vw 4vw;
         color: #fff;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 3vw;
     }
     .page3 .card1 p{
-        padding:80px 10px;
-        font-size: 12px;
+        font-size: 3vw;
+        padding:19vw 4vw;
+    }
+
+    .page3 .hovercard .pbtns{
+        margin-left: 15vw;
     }
     
     
     .page3 .hovercard .pbtn{
-        padding: 10px 25px;
+        padding: 3vw 5vw;
+        font-size: 3vw;
         
     }
+
     
     .page3 .hovercard:hover{
         opacity: 1;
@@ -1031,7 +1087,7 @@ footer a{
     /* animation move */
     .page3 .more{
         margin-top: 50px;
-        margin-left: 60%;
+        margin-left: 45%;
     }
     
     .page3 .more-p{
@@ -1041,7 +1097,7 @@ footer a{
 
 
     /* contact page  4 setup*/
-    .page4{
+    #Contact{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1050,7 +1106,7 @@ footer a{
     }
     
     
-    .page4 .cot1{
+    #Contact .cot1{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1061,65 +1117,65 @@ footer a{
        
     }
     
-    .page4 .cot1 h1{
+    #Contact .cot1 h1{
         text-transform: capitalize;
         font-size: 5vw;
         font-weight: 700;
     }
     
-    .page4 .cot1 .contact{
+    #Contact .cot1 .contact{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     
-    .page4 .cot1 .contact a{
+    #Contact .cot1 .contact a{
         padding: 0px 10px;
         font-size: 3vw;
         font-weight: 400;
     }
     
-    .page4 .cot1 .socialmedia i{
+    #Contact .cot1 .socialmedia i{
         font-size: 4.5vw;
         margin-top: 10px;
         margin-left: -1px;
     }
     
-    .page4 .cot1 .downloadbtn{
+    #Contact .cot1 .downloadbtn{
         margin-top: 34px;
         margin-left: 4px;
-        padding: 16px 50px;
+        padding: 3vw 5vw;
     }
     
     /* email section */
 
 
-    .page4 .cot2 {
+    #Contact .cot2 {
         height: 500px;
         width: 70vw;
        
     }
     
-    .page4 .cot2 .name-email{
+    #Contact .cot2 .name-email{
         width: 65vw;
         
     }
     
-    .page4 .cot2 #email{
+    #Contact .cot2 #email{
         width: 65vw;
     }
     
     
     
-    .page4 .cot2 .message{
+    #Contact .cot2 .message{
         width: 65vw;
         height: 25vh;
         
     }
     
-    .page4 .cot2 .btn{
-        padding: 15px 45px;
+    #Contact .cot2 .btn{
+        padding: 3vw 10vw;
     }
     
 
