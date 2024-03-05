@@ -3,13 +3,13 @@
 // about me page skills education and experience btn effect creation
 function aboutmepage(){
 
-const skillsbtn = document.querySelector(".page2 .card3 #skills");
-const expbtn = document.querySelector(".page2 .card3 #Experience");
-const edubtn = document.querySelector(".page2 .card3 #Education");
+const skillsbtn = document.querySelector("#About .card3 #skills");
+const expbtn = document.querySelector("#About .card3 #Experience");
+const edubtn = document.querySelector("#About .card3 #Education");
 
-const skillssection = document.querySelector(".page2 .card4");
-const ExpSection = document.querySelector(".page2 .card5");
-const EduSection = document.querySelector(".page2 .card6");
+const skillssection = document.querySelector("#About .card4");
+const ExpSection = document.querySelector("#About .card5");
+const EduSection = document.querySelector("#About .card6");
 
 
 
@@ -83,8 +83,8 @@ navmenuclickscrollpage();
 
 // responsive menu btn click then open menu bar effect creation
 function menubtn(){
-  const mbtn =document.querySelector("nav .fa-bars");
- const xbtn =document.querySelector("nav .fa-xmark");
+  const mbtn =document.querySelector(".menu .fa-bars");
+ const xbtn =document.querySelector(".menu .fa-xmark");
 
 const navmenu =  document.querySelector(".manubar2");
 
@@ -156,7 +156,7 @@ tl.from("nav .logo, nav .navbarname a",{
 
 });
 
-gsap.from(".contaner .card img",{
+gsap.from("#home .card img",{
     x:-100,
     duration:3,
     opacity:0,
@@ -165,7 +165,7 @@ gsap.from(".contaner .card img",{
 
 });
 
-tl.from(".contaner .card2 .hello",{
+tl.from("#home .card2 .hello",{
     x:-100,
     duration:0.5,
     opacity:0,
@@ -174,7 +174,7 @@ tl.from(".contaner .card2 .hello",{
 });
 
 
-tl.from(".contaner .card2 .name",{
+tl.from("#home .card2 .name",{
     x:100,
     duration:0.5,
     opacity:0,
@@ -182,14 +182,14 @@ tl.from(".contaner .card2 .name",{
 
 });
 
-tl.from(".contaner .card2 .job",{
+tl.from("#home .card2 .job",{
     x:-100,
     duration:0.5,
     opacity:0,
     // stagger:3
 
 });
-tl.from(".contaner .card2 .titletag",{
+tl.from("#home .card2 .titletag",{
     x:-100,
     duration:0.5,
     opacity:0,
@@ -197,7 +197,7 @@ tl.from(".contaner .card2 .titletag",{
 
 });
 
-tl.from(".contaner .card2 a",{
+tl.from("#home .card2 a",{
     x:100,
     duration:0.5,
     opacity:0,
@@ -208,15 +208,15 @@ tl.from(".contaner .card2 a",{
 
 
 // anout page animation
-tl.to(".page2,.page2 img,.page2 .card2",{
+tl.to("#About,#About img, #About .card2",{
     transition: "all ease 1s",
     opacity: 1,
     trigger:1,
     scrollTrigger: {
-        trigger: ".page2",
+        trigger: "#About",
         scroller: "body",
-        start: "top 25%",
-        end: "top 35%",
+        start: "top 5%",
+        end: "top 15%",
         scrub:true,
         // markers:true
       },
@@ -243,7 +243,7 @@ tl.to(".page3 .card1, .page3 h1, .page3 .more",{
 
 // navbar animation 
 gsap.to(".nav", {
-    height: "80px",
+    height: "70px",
     backgroundColor: "#111",
     duration: 0.5,
     scrollTrigger: {
