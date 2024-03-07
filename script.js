@@ -91,7 +91,7 @@ const navmenu =  document.querySelector(".manubar2");
 
 mbtn.addEventListener("click",function(){
   navmenu.style.opacity = 1;
-  navmenu.style.zIndex = 99;
+  navmenu.style.zIndex = 98;
   navmenu.style.transition = "all ease 1s";
   mbtn.style.opacity = 0;
   xbtn.style.opacity = 1;
@@ -101,6 +101,7 @@ mbtn.addEventListener("click",function(){
 
 xbtn.addEventListener("click",function(){
   navmenu.style.opacity = 0;
+    navmenu.style.zIndex = -10;
   mbtn.style.opacity = 1;
   xbtn.style.opacity = 0;
 
