@@ -49,7 +49,7 @@ nav{
     align-items: center;
     justify-content: space-around;
     position: fixed;
-    z-index: 999;
+    z-index: 99;
 }
 
 nav .navbarname{
@@ -103,7 +103,7 @@ nav .logo span{
     background-color: rgb(25, 25, 25);
     opacity: 0;
     position: absolute;
-    z-index: 555;
+    z-index: -10;
     
 }
 
@@ -151,6 +151,8 @@ video{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: relative;
+    z-index: 97;
 }
 
 
