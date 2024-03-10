@@ -741,7 +741,7 @@ footer a{
 
 
     /* navbar setup */
-    html,body{
+    body{
         height: 100%;
         width: 100%;
         padding: 0px;
