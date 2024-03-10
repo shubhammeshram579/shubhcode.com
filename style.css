@@ -741,6 +741,13 @@ footer a{
 
 
     /* navbar setup */
+    html,body{
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
 
     nav{
         height: 70px;
