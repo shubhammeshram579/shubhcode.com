@@ -83,28 +83,30 @@ navmenuclickscrollpage();
 
 // responsive menu btn click then open menu bar effect creation
 function menubtn(){
-  const mbtn =document.querySelector(".menu .fa-bars");
- const xbtn =document.querySelector(".menu .fa-xmark");
+  const mbtn = document.querySelector(".menu .fa-bars");
+ const xbtn = document.querySelector(".menu .fa-xmark");
 
 const navmenu =  document.querySelector(".manubar2");
 
 
+var a = 0
 mbtn.addEventListener("click",function(){
+
   navmenu.style.opacity = 1;
   navmenu.style.zIndex = 98;
   mbtn.style.opacity = 0;
   xbtn.style.opacity = 1;
-
 })
 
 
 xbtn.addEventListener("click",function(){
   navmenu.style.opacity = 0;
-    navmenu.style.zIndex = -10;
+  navmenu.style.zIndex = -10;
   mbtn.style.opacity = 1;
   xbtn.style.opacity = 0;
 
 })
+
 };
 
 menubtn();
@@ -116,7 +118,7 @@ function mousecursulmove(){
   const cbtn = document.querySelector(".cursul");
   const body = document.querySelector("body");
 
-  const cv = document.querySelectorAll(".contaner a");
+  const cv = document.querySelectorAll("#home .homebtn a");
 
   document.addEventListener("mousemove", function(dets){
     gsap.to(".cursul",{
@@ -128,7 +130,7 @@ function mousecursulmove(){
  
  cv.forEach(function(val){
   val.addEventListener("mouseenter",function(){
-    cbtn.style.zIndex = "-99"
+    cbtn.style.zIndex = "-10"
    }
    )
 
