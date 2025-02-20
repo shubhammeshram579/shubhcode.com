@@ -8,7 +8,6 @@
     font-weight: 500;
     color: #b3afafd9;
     box-sizing:content-box;
-   
 }
 
 *::selection{
@@ -16,11 +15,45 @@
     color:rgb(154, 188, 32);
 }
 
-
-html,body{
+html{
     height: 100%;
     width: 100%;
+    padding: 0;
+    margin: 0;
+    /* background-color:#111; */
+    overflow-x: hidden;
+
 }
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    
+}
+
+/* home page background video set */
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: fixed;
+    z-index: -10;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color:#111111d1 ;
+}
+.main2{
+    height: 100%;
+    width: 100%;
+    background-color:#111111d1;
+}
+
 
 
 body::-webkit-scrollbar{
@@ -35,9 +68,6 @@ body::-webkit-scrollbar-thumb{
     border-radius: 50px;
 }
 
-body{
-    overflow-x: hidden;
-}
 
 /* navbar 1 styling*/
 
@@ -49,7 +79,9 @@ nav{
     align-items: center;
     justify-content: space-around;
     position: fixed;
+    top: 0;
     z-index: 99;
+    /* max-width: inherit; */
 }
 
 nav .navbarname{
@@ -123,14 +155,8 @@ nav .logo span{
 
 
 
-/* home page background video set */
-video{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: fixed;
-    z-index: -1;
-}
+
+
 
 
 
@@ -160,6 +186,7 @@ video{
 
 #home .card{
     margin-left: 150px;
+    /* padding-right: 100px; */
 }
 
 /* home page img styling */
@@ -183,6 +210,7 @@ video{
 #home  .card2 {
     font-size: 3vw;
     line-height: 6vh;
+    margin-right: -240px;
 }
 
 #home  .hello {
@@ -199,7 +227,7 @@ video{
 #home  .titletag{
     margin-top: 17px;
     font-size: 1.5vh;
-    width: 64%;
+    width: 50%;
     line-height: 17px;
     margin-left: 5px;
 }
@@ -217,6 +245,8 @@ video{
 }
 
 
+
+
 /* about me page 2 styling */
 
 #About{
@@ -225,17 +255,9 @@ video{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: #111;
     opacity: 0;
 }
-
-#About{
-    background-color: #111;
-}
-
-.main{
-    background-color: #111111d1;
-}
-
 
 
 #About .card2{
@@ -266,7 +288,7 @@ video{
 }
 
 #About .card2 p{
-    width: 85%;
+    width: 80%;
     text-align: justify;
     line-height: 1.5vw;
     font-size: 1vw;
@@ -414,8 +436,11 @@ video{
 /* project page 3 styling*/
 
 .page3{
+    /* margin-top: -40px; */
     min-height: 100vh;
+    width: 100%;
     background-color:#111;
+
 }
 .page3 h1{
     padding-top: 100px;
@@ -459,6 +484,30 @@ video{
     opacity: 0;
     
 }
+.page3 #card4{
+    background-image: url("./img/finalBioBiz.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;
+    
+}
+.page3 #card5{
+    background-image: url("./img/weaterApp.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;
+    
+}
+.page3 #card6{
+    background-image: url("./img/Pib4.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0;
+    
+}
 
 
 .page3 #card1:hover{
@@ -480,6 +529,7 @@ video{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-top: 5%;
 }
 
@@ -637,6 +687,8 @@ video{
     font-size: 2vw;
     mix-blend-mode: difference;
     margin-top: 10px;
+    margin-bottom: 50px;
+
 }
 
 #Contact .cot1 .downloadbtn{
@@ -648,6 +700,8 @@ video{
     color: black;
     background-color: rgb(160, 128, 21);
     mix-blend-mode: difference;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 
@@ -738,9 +792,38 @@ footer a{
 
 @media (max-width:600px) {
 
-
-
     /* navbar setup */
+    /* html{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color:#111;
+        
+    } */
+
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: red;
+
+        
+    }
+
+    /* .main{
+        height: 100%;
+        width: 140vw;
+
+    } */
+
+    /* .main2{
+        height: 100%;
+        width: 140vw;
+
+    } */
+
     nav{
         height: 70px;
         width: 100%;
@@ -748,7 +831,10 @@ footer a{
         align-items: center;
         justify-content: space-around;
         position: fixed;
-        z-index: 999;
+        top: 0;
+        z-index: 99;
+        max-width: inherit;
+        
     }
     
     nav .navbarname{
@@ -836,6 +922,7 @@ footer a{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin: 0px;
     }
 
     #home .card2 .hello{
@@ -863,7 +950,7 @@ footer a{
 
     #home .card2 .titletag{
         font-size: 1.5vh;
-        line-height: 17px;
+        line-height: 14px;
         margin-bottom: 20px;
         text-align: center;
         margin-top: -1px;
@@ -879,6 +966,13 @@ footer a{
 
 
     /* about me page 2 setup*/
+
+    /* #About{
+        height: 110vh;
+        width: 140vw;
+    } */
+
+
 
     #About .card2{
         width: 100%;
@@ -904,14 +998,14 @@ footer a{
     
     
     #About .card2 .about-me{
-        font-size: 4vw;
+        font-size: 5vw;
         margin-top: 20px;
     }
 
     #About .card2 .box p{
         width: 90%;
-        font-size: 3vw;
-        line-height: 3.5vw;
+        font-size: 3.2vw;
+        line-height: 4vw;
         padding: 0 20px;
         text-align: center;
         font-weight: 400;
@@ -921,54 +1015,58 @@ footer a{
 
     #About .card3 {
         width: 100%;
-        gap: 18vw;
+        gap:12vw;
         margin-top: 20px;
         margin-bottom: -10px;
         font-weight: 400;
         mix-blend-mode: difference;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
     }
     
     #About .card3 h1{
-        font-size: 4vw;
+        font-size: 4.5vw;
+        text-align: center;
         mix-blend-mode: difference;
-        margin-left: 20px;
-        margin-right: -10px;
     }
 
 
 
     #About .card4 {
         height: 15vh;
-        width: 78vw;
+        width: 80%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         line-height: 4vh;
         text-align: start;
-        margin-left: 4vw;
+        margin-left: 5vw;
         
     }
 
 
     #About .card4 h3{
-        font-size: 3vw;
+        font-size: 3.5vw;
         font-weight: 400;
     }
 
     #About .card4 i{
-        font-size: 3.5vw;
+        font-size: 4vw;
         
     }
 
     /* exprience section */
     #About .card5{
-        height: 35vh;
-        width: 75%;
+        height: 40vh;
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content:center;
         margin-top: 10px;
+        padding-left: 50px;
         
         
     }
@@ -977,7 +1075,7 @@ footer a{
         height: 10vh;
         text-align: center;
         margin-top: 20px;
-        margin-left: 70px;
+        /* margin-left: 70px; */
         padding-top: 10px;
     }
     
@@ -985,19 +1083,19 @@ footer a{
         height: 10vh;
         text-align:center;
         line-height: 3vh;
-        margin-left: 70px;
+        margin-left: -5px;
         padding-top: 10px;
     
     }
     
     
     #About .card5 h1{
-        font-size: 4vw;
+        font-size: 5vw;
     }
     
     #About .card5 h2{
-        font-size: 3vw;
-        letter-spacing: 1px;
+        font-size: 3.5vw;
+        letter-spacing: 0.6px;
         font-weight: 400;
     }
 
@@ -1008,15 +1106,15 @@ footer a{
         width: 90%;
         display: flex;
         flex-direction: column;
-        margin-left: 20px;
+        margin-left: 30px;
     }
     
     #About .card6 h1{
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     #About .card6 h2{
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     #About .card6 .edu2{
@@ -1024,6 +1122,13 @@ footer a{
     }
 
     /* project section */
+
+
+    .page3{
+        height: 100%;
+        width: 100%;
+    }
+
     .page3 h1{
         font-size: 5vw;
         padding-bottom: 50px;
@@ -1036,15 +1141,15 @@ footer a{
     }
 
     .page3 .card1{
-        height: 75vw;
-        width: 73vw;
+        height:75vw;
+        width: 70vw;
         margin-bottom: 35px;
     } 
 
 
     .page3 .hovercard{
-        height: 75vw;
-        width: 73vw;
+        height:75vw;
+        width: 70vw;
         border-radius: 10px;
     }
     
@@ -1063,14 +1168,15 @@ footer a{
     .page3 .card1 .psummary1{
         border-radius: 10px;
         text-align: center;
-        padding:22vw 4vw;
+        padding:21vw 4vw;
         color: #fff;
         font-weight: 400;
         font-size: 3vw;
     }
     .page3 .card1 p{
         font-size: 3vw;
-        padding:19vw 4vw;
+        padding: 15vw 20px;
+
     }
 
     .page3 .hovercard .pbtns{
@@ -1104,6 +1210,8 @@ footer a{
 
     /* contact page  4 setup*/
     #Contact{
+        /* height: 140vh;
+        width: 140vw; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1146,6 +1254,7 @@ footer a{
         font-size: 4.5vw;
         margin-top: 10px;
         margin-left: -1px;
+        margin-bottom: -50px;
     }
     
     #Contact .cot1 .downloadbtn{
@@ -1182,7 +1291,9 @@ footer a{
     
     #Contact .cot2 .btn{
         padding: 3vw 10vw;
+    
     }
+
     
 
     footer{
